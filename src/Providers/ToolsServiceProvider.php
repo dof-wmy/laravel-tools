@@ -10,8 +10,8 @@ class ToolsServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {logger('1');
-        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'wmy.one-piece.tools');
+    {
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'one-piece');
         $this->loadRoutesFrom(__DIR__.'/../routes.php');
     }
 
