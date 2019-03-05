@@ -1,0 +1,27 @@
+{
+    "name": "wmy/laravel-tools",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WMY",
+            "email": "mengyang1229@126.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "WMY\\OnePiece\\Tools\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": "5.8.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WMY\\OnePiece\\Tools\\Providers\\ToolsServiceProvider"
+            ]
+        }
+    }
+}
