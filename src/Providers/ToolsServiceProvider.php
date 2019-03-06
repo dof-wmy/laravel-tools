@@ -11,8 +11,11 @@ class ToolsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'one-piece');
         $this->loadRoutesFrom(__DIR__.'/../routes.php');
+        $this->mergeConfigFrom(
+            __DIR__.'/../../config/one-piece.php', 'one-piece'
+        );
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'one-piece');
     }
 
     /**

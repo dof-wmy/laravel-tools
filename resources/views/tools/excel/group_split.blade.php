@@ -9,11 +9,11 @@
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="sheet_name">Sheet名称</label>
-                    <input type="text" class="form-control" id="sheet_name" name="sheet_name" value="Sheet2" placeholder="">
+                    <input type="text" class="form-control" id="sheet_name" name="sheet_name" value="{{ $sheetName }}" placeholder="">
                 </div>
                 <div class="form-group">
                     <label for="group_by">拆分字段</label>
-                    <input type="text" class="form-control" id="group_by" name="group_by" value="营业部" placeholder="">
+                    <input type="text" class="form-control" id="group_by" name="group_by" value="{{ $groupBy }}" placeholder="">
                 </div>
                 <div class="form-group">
                     <label for="group_join">合并组</label>
